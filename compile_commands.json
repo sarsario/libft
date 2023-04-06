@@ -1,0 +1,257 @@
+[
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_bzero.o",
+            "ft_bzero.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_bzero.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_bzero.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_isalnum.o",
+            "ft_isalnum.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_isalnum.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_isalnum.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_isalpha.o",
+            "ft_isalpha.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_isalpha.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_isalpha.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_isascii.o",
+            "ft_isascii.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_isascii.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_isascii.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_isdigit.o",
+            "ft_isdigit.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_isdigit.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_isdigit.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_isprint.o",
+            "ft_isprint.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_isprint.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_isprint.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_memcpy.o",
+            "ft_memcpy.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_memcpy.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_memcpy.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_memmove.o",
+            "ft_memmove.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_memmove.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_memmove.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_memset.o",
+            "ft_memset.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_memset.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_memset.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_strchr.o",
+            "ft_strchr.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_strchr.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_strchr.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_strlcat.o",
+            "ft_strlcat.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_strlcat.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_strlcat.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_strlcpy.o",
+            "ft_strlcpy.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_strlcpy.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_strlcpy.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_strlen.o",
+            "ft_strlen.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_strlen.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_strlen.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_strncmp.o",
+            "ft_strncmp.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_strncmp.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_strncmp.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_strrchr.o",
+            "ft_strrchr.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_strrchr.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_strrchr.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_tolower.o",
+            "ft_tolower.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_tolower.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_tolower.o"
+    },
+    {
+        "arguments": [
+            "/usr/bin/cc",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-c",
+            "-o",
+            "ft_toupper.o",
+            "ft_toupper.c"
+        ],
+        "directory": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari",
+        "file": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_toupper.c",
+        "output": "/Users/osarsari/Documents/42Cursus/Libft/intra-uuid-73c9c8b2-74f1-4c8a-ba16-1f2d43af9dcb-4792478-osarsari/ft_toupper.o"
+    }
+]
