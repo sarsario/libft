@@ -1,24 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/03 14:51:06 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/03 14:54:30 by osarsari         ###   ########.fr       */
+/*   Created: 2023/04/03 14:28:53 by osarsari          #+#    #+#             */
+/*   Updated: 2023/04/06 23:01:51 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned char	*ptr;
-
-	if (n == 0)
-		return ;
-	ptr = (unsigned char *)s;
-	while (n--)
-		*ptr++ = 0;
+	while (len--)
+		*(unsigned char *)b++ = (unsigned char)c;
+	return (b);
 }

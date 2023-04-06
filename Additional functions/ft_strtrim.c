@@ -6,11 +6,11 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 11:05:34 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/05 13:05:29 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/06 23:04:27 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 #include <stdlib.h>
 
 static int	ft_char_in_str(char const c, char const *set)

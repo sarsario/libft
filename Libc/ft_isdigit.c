@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/03 13:31:43 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/03 13:43:28 by osarsari         ###   ########.fr       */
+/*   Created: 2023/04/03 13:13:28 by osarsari          #+#    #+#             */
+/*   Updated: 2023/04/06 23:00:11 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-size_t	ft_strlen(const char *s)
+int	ft_isdigit(int c)
 {
-	size_t	len;
-
-	len = 0;
-	while (*s++)
-		len++;
-	return (len);
+	return (c >= '0' && c <= '9');
 }

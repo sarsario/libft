@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/03 14:22:59 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/04 14:38:56 by osarsari         ###   ########.fr       */
+/*   Created: 2023/04/03 13:25:58 by osarsari          #+#    #+#             */
+/*   Updated: 2023/04/06 23:00:50 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-int	ft_tolower(int c)
+int	ft_isprint(int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + ('a' - 'A'));
-	return (c);
+	return (c >= 32 && c <= 126);
 }

@@ -1,18 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/03 13:21:30 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/03 13:44:38 by osarsari         ###   ########.fr       */
+/*   Created: 2023/04/03 16:39:14 by osarsari          #+#    #+#             */
+/*   Updated: 2023/04/06 23:02:48 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-int	ft_isascii(int c)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	return (c >= 0 && c <= 127);
+	size_t	src_len;
+	size_t	cpy_len;
+
+	src_len = ft_strlen(src);
+	if (dstsize == 0)
+		return (src_len);
+	if (src_len < dstsize - 1)
+		cpy_len = src_len;
+	else
+		cpy_len = dstsize - 1;
+	ft_memmove(dst, src, cpy_len);
+	dst[cpy_len] = '\0';
+	return (src_len);
 }

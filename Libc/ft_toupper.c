@@ -1,29 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/03 12:47:21 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/06 22:15:16 by osarsari         ###   ########.fr       */
+/*   Created: 2023/04/03 14:18:09 by osarsari          #+#    #+#             */
+/*   Updated: 2023/04/06 23:03:28 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-/*
-**  The ft_isalpha function tests whether the integer c is an alphabetic
-**  character. An alphabetic character is either an uppercase letter or
-**  a lowercase letter. The function returns zero if the character is not
-**  alphabetic, and a non-zero integer value otherwise.
-*/
-
-int	ft_isalpha(int c)
+int	ft_toupper(int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (1);
 	if (c >= 'a' && c <= 'z')
-		return (1);
-	return (0);
+		return (c - ('a' - 'A'));
+	return (c);
 }
