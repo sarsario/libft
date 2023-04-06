@@ -58,29 +58,29 @@ The `libft.a` library contains the following functions:
 
 ### String Manipulation
 
-- `ft_substr`:
-- `ft_strjoin`:
-- `ft_strtrim`:
-- `ft_split`:
-- `ft_itoa`:
-- `ft_strmapi`:
-- `ft_striteri`:
-- `ft_putchar_fd`:
-- `ft_putstr_fd`:
-- `ft_putendl_fd`:
-- `ft_putnbr_fd`:
+- `ft_itoa`: Converts an integer to a string.
+- `ft_putchar_fd`: Outputs a character to a file descriptor.
+- `ft_putendl_fd`: Outputs a string followed by a newline to a file descriptor.
+- `ft_putnbr_fd`: Outputs an integer to a file descriptor.
+- `ft_putstr_fd`: Outputs a string to a file descriptor.
+- `ft_split`: Splits a string into an array of substrings based on a delimiter character.
+- `ft_striteri`: Applies a function to each character of a string.
+- `ft_strjoin`: Concatenates two strings.
+- `ft_strmapi`: Applies a function to each character of a string with its index.
+- `ft_strtrim`: Removes specified characters from the beginning and end of a string.
+- `ft_substr`: Returns a substring of a string starting at a specified index with a specified length.
 
 ### Bonus functions
 
-- `ft_lstnew`:
-- `ft_lstadd_front`:
-- `ft_lstsize`:
-- `ft_lstlast`:
-- `ft_lstadd_back`:
-- `ft_lstdelone`:
-- `ft_lstclear`:
-- `ft_lstiter`:
-- `ft_lstmap`:
+- `ft_lstadd_back`: Adds a new element to the end of a linked list.
+- `ft_lstadd_front`: Adds a new element to the beginning of a linked list.
+- `ft_lstclear`: Deletes all elements of a linked list and frees their memory.
+- `ft_lstdelone`: Deletes an element of a linked list and frees its memory.
+- `ft_lstlast`: Returns the last element of a linked list.
+- `ft_lstmap`: Applies a function to each element of a linked list and creates a new list with the results.
+- `ft_lstnew`: Creates a new element for a linked list.
+- `ft_lstsize`: Returns the number of elements in a linked list.
+- `ft_lstiter`: Applies a function to each element of a linked list.
 
 ## Credits
 
