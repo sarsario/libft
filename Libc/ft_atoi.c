@@ -6,9 +6,18 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 08:17:30 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/06 22:58:45 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/07 00:22:01 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Convert the initial portion of a string pointed to by `str` to an integer.
+**
+** `str` : the string to be converted.
+**
+** Returns:
+** The converted integer value.
+*/
 
 #include "../libft.h"
 
