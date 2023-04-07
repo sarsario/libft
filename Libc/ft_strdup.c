@@ -6,12 +6,24 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 09:12:39 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/06 23:02:35 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/07 18:58:51 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 #include <stdlib.h>
+
+/*
+** Allocates sufficient memory for a copy of the string 's1', does the copy,
+** and returns a pointer to it. The pointer may subsequently be used as an
+** argument to the function free(3). If insufficient memory is available,
+** NULL is returned.
+**
+** s1: The string to be duplicated.
+**
+** returns: The pointer to the new duplicate string or NULL if insufficient
+** memory was available.
+*/
 
 char	*ft_strdup(const char *s1)
 {
