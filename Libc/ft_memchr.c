@@ -6,23 +6,23 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 15:45:09 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 16:58:05 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/07 17:40:34 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
 /*
-** Searches the initial n bytes of the memory area pointed to by s for the first occurrence of
-** the character c (interpreted as an unsigned char).
+** Searches the initial n bytes of the memory area pointed to by s for
+** the first occurrence of the character c (interpreted as an unsigned char).
 **
 ** s: A pointer to the memory area to be searched.
 ** c: The character to be searched.
 ** n: The number of bytes to be searched.
 **
 ** Returns:
-** A pointer to the first occurrence of the character c in the memory area s, or NULL if the
-** character is not found.
+** A pointer to the first occurrence of the character c in the memory area s,
+** or NULL if the character is not found.
 */
 
 void	*ft_memchr(const void *s, int c, size_t n)

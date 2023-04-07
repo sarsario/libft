@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 16:02:27 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 17:33:29 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/07 17:39:52 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,10 @@
 ** n: The number of bytes to compare.
 **
 ** Returns:
-** An integer less than, equal to, or greater than zero if the first n bytes of s1 are found,
-** respectively, to be less than, to match, or be greater than the first n bytes of s2.
+** An integer less than, equal to, or greater than zero
+** if the first n bytes of s1 are found,
+** respectively, to be less than, to match, or be greater than
+** the first n bytes of s2.
 */
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
