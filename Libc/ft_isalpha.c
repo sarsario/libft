@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 12:47:21 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 16:08:32 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/07 16:26:34 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 ** Returns:
 **   Zero if the character tests false for alphabeticness, non-zero otherwise.
 */
-
 
 int	ft_isalpha(int c)
 {
