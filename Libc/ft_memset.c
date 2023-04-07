@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:28:53 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 18:46:29 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/07 18:48:34 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned char *ptr;
+	unsigned char	*ptr;
 
 	if (!b)
 		return (NULL);
