@@ -6,17 +6,33 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:57:59 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/06 23:01:29 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/07 18:23:08 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+
+/*
+** Copies n bytes from memory area src to memory area dst.
+** If dst and src overlap, behavior is undefined.
+**
+** dst: A pointer to the destination array where the content is to be copied.
+** src: A pointer to the source of data to be copied.
+** n: The number of bytes to be copied.
+**
+** Returns:
+** A pointer to the destination array, which is dst.
+*/
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char		*dst_char;
 	const char	*src_char;
 
+	if (!dst)
+		return (NULL);
+	if (!dst && !src)
+		return (NULL);
 	dst_char = dst;
 	src_char = src;
 	while (n--)
