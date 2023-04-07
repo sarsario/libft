@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 13:17:30 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 12:56:47 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/07 16:27:07 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 ** Return:
 ** Non-zero value if the character is alphanumeric, 0 otherwise.
 */
-
 
 int	ft_isalnum(int c)
 {
