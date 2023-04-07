@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 08:48:43 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 12:49:30 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/07 12:57:55 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 #include <stdlib.h>
 
 /*
-** Allocates memory for an array of count elements of size bytes each and
+** Allocates memory for an array of `count` elements of `size` bytes each and
 ** returns a pointer to the allocated memory. The memory is set to zero.
 **
-** @param count The number of elements to allocate memory for.
-** @param size The size of each element to allocate memory for.
+** count: the number of elements to allocate memory for.
+** size: the size of each element to allocate memory for.
 **
-** @return A void pointer to the allocated memory if successful, NULL otherwise.
+** returns: A void pointer to the allocated memory if successful, NULL otherwise.
 */
 
 void	*ft_calloc(size_t count, size_t size)
