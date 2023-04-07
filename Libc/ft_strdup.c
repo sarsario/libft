@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 09:12:39 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 18:58:51 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/07 20:14:17 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,6 @@ char	*ft_strdup(const char *s1)
 	while (*s1)
 		*dup++ = *s1++;
 	*dup = 0;
-	dup -= len + 1;
+	dup -= len;
 	return (dup);
 }
