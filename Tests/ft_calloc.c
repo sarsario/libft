@@ -7,25 +7,22 @@
 #define TEST_COUNT 5
 
 typedef struct {
-    size_t count;
-    size_t size;
-} TestParams;
+    size_t	count;
+    size_t	size;
+}	TestParams;
 
 int main(void)
 {
-    int failures = 0;
+    void	*ptr1;
+    void	*ptr2;
+    int		failures = 0;
     TestParams tests[TEST_COUNT] = {
         {0, 0},
         {10, sizeof(int)},
         {100, sizeof(char)},
         {50, sizeof(double)},
         {sizeof(float), sizeof(float)}
-        // {SIZE_MAX, SIZE_MAX}
-        // {SIZE_MAX - 1, SIZE_MAX - 1},
-        // {SIZE_MAX / sizeof(int), sizeof(int)},
-        // {SIZE_MAX / sizeof(char), sizeof(char)}
     };
-    void *ptr1, *ptr2;
 
     for (int i = 0; i < TEST_COUNT; i++) {
         ptr1 = ft_calloc(tests[i].count, tests[i].size);
