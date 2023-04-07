@@ -44,5 +44,11 @@ int main(void)
     res2 = memcmp(buf7, buf8, 0);
     printf("ft_memcmp(\"hello\", \"world\", 0) = %d, memcmp(\"hello\", \"world\", 0) = %d\n", res1, res2);
 
+    char buf9[BUF_SIZE] = "abcdefghij";
+    char buf10[BUF_SIZE] = "abcdefgiyz";
+    res1 = ft_memcmp(buf9, buf10, 7);
+    res2 = memcmp(buf9, buf10, 7);
+    printf("ft_memcmp(\"abcdefghij\", \"abcdefgxyz\", 0) = %d, memcmp(\"abcdefghij\", \"abcdefgxyz\", 0) = %d\n", res1, res2);
+
     return 0;
 }
