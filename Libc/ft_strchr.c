@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 14:46:07 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 18:57:18 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/08 16:52:13 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,9 @@
 ** s: The string to search in.
 ** c: The character to search for.
 **
-** returns: A pointer to the first occurrence of the character c in the
-**          string s, or NULL if the character is not found.
+** Returns:
+** A pointer to the first occurrence of the character c in the string s,
+** or NULL if the character is not found.
 */
 
 char	*ft_strchr(const char *s, int c)

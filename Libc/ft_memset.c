@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:28:53 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 18:48:34 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/08 16:49:33 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@
 **      unsigned char before being written to memory.
 ** len: The number of bytes to be set to the value.
 **
-** Returns: A pointer to the memory area 'b'.
+** Returns:
+** A pointer to the memory area 'b'.
 */
 
 void	*ft_memset(void *b, int c, size_t len)
