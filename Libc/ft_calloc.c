@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 08:48:43 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 16:03:13 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/08 15:33:36 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ void	*ft_calloc(size_t count, size_t size)
 	total = count * size;
 	if (total / count != size || total / size != count)
 		return (NULL);
-	ptr = malloc(count * size);
+	ptr = malloc(total);
 	if (!ptr)
 		return (NULL);
-	ft_bzero(ptr, count * size);
+	ft_bzero(ptr, total);
 	return (ptr);
 }
