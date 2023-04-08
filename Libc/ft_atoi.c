@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 08:17:30 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/08 15:11:57 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/08 15:14:05 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_atoi(const char *str)
 	res = 0;
 	neg = 0;
 	if (!str)
-		return (res);
+		return (0);
 	while (*str && ((*str >= 9 && *str <= 13) || *str == 32))
 		str++;
 	if (*str == '-' || *str == '+')
