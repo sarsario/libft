@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 08:17:30 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/08 15:14:05 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/08 15:18:34 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** `str` : the string to be converted.
 **
 ** Returns:
-** The converted integer value.
+** The converted integer value. Behavior undefined if the the integer > INT_MAX
 */
 
 #include "../libft.h"
