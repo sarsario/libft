@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 09:52:42 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/10 11:54:03 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 18:02:10 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	while (*s && i++ < len)
 		*sub++ = *s++;
 	*sub = 0;
-	sub -= len + 1;
+	sub -= len;
 	return (sub);
 }
