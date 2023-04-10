@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 10:47:00 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/10 11:45:00 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 19:06:43 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	while (*s2)
 		*fusion++ = *s2++;
 	*fusion = 0;
-	fusion -= (s1_len + s2_len + 1);
+	fusion -= (s1_len + s2_len);
 	return (fusion);
 }
