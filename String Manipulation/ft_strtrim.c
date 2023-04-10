@@ -6,12 +6,22 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 11:05:34 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/06 23:04:27 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:54:17 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 #include <stdlib.h>
+
+/*
+** Searches for a character in a string.
+**
+** c:	The character to search for.
+** set:	The string in which to search.
+**
+** Returns:
+** 1 if the character is found in the string, 0 otherwise.
+*/
 
 static int	ft_char_in_str(char const c, char const *set)
 {
@@ -25,6 +35,17 @@ static int	ft_char_in_str(char const c, char const *set)
 	}
 	return (0);
 }
+
+/*
+** Trims leading and trailing characters specified in set from a string s1,
+** and returns a newly allocated string with the trimmed result.
+**
+** s1:	The string to trim.
+** set:	The set of characters to trim from s1.
+**
+** Returns:
+** The trimmed string, or NULL if the allocation fails.
+*/
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

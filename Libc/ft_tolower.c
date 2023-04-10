@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:22:59 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/10 11:39:04 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:55:46 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*
 ** Converts the given uppercase letter to its corresponding lowercase letter.
 **
-** c: The character to convert.
+** c:	The character to convert.
 **
 ** Returns:
 ** The lowercase equivalent of the given uppercase letter if the given character

@@ -6,12 +6,22 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 10:47:00 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/06 23:04:23 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:45:00 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 #include <stdlib.h>
+
+/*
+** Concatenates two strings s1 and s2 into a newly allocated string.
+**
+** s1:	The prefix string.
+** s2:	The suffix string.
+**
+** Returns:
+** The concatenated string, or NULL if the allocation fails.
+*/
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
