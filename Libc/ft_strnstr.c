@@ -6,30 +6,23 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 16:17:19 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/06 23:03:07 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:37:34 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-// char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
-// {
-// 	size_t	needle_len;
-
-// 	if (!needle)
-// 		return ((char *)haystack);
-// 	needle_len = ft_strlen(needle);
-// 	while (*haystack && len >= needle_len)
-// 	{
-// 		if (len < needle_len)
-// 			return (NULL);
-// 		if (ft_strncmp(haystack, needle, needle_len) == 0)
-// 			return ((char *)haystack);
-// 		haystack++;
-// 		len--;
-// 	}
-// 	return ((char *)haystack);
-// }
+/*
+** Locates the first occurrence of the null-terminated string needle
+** in the string haystack, where not more than len characters are searched.
+**
+** haystack: A pointer to the string to be searched.
+** needle:   A pointer to the string to search for.
+** len:      The maximum number of characters to search in haystack.
+**
+** Returns:
+** A pointer to the located substring, or NULL if the substring is not found.
+*/
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

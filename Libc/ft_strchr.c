@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 14:46:07 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/08 16:52:13 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:32:13 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 ** Searches for the first occurrence of the character c (an unsigned char)
 ** in the string pointed to by s.
 **
-** s: The string to search in.
-** c: The character to search for.
+** s:	The string to search in.
+** c:	The character to search for.
 **
 ** Returns:
 ** A pointer to the first occurrence of the character c in the string s,

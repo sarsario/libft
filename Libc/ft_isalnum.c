@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 13:17:30 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 16:27:07 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:24:06 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*
 ** Check if the given character is alphanumeric.
 **
-** c: the character to be checked
+** c:	The character to be checked
 **
 ** Return:
 ** Non-zero value if the character is alphanumeric, 0 otherwise.

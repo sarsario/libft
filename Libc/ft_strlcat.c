@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 12:53:48 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 21:56:05 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:33:26 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,12 @@
 ** If `dstsize` is 0, the result is the length of `src`.
 ** Returns the total length of the string it tried to create.
 **
-** dst		The destination string.
-** src		The source string to append to `dst`.
-** dstsize	The maximum size of the resulting string.
+** dst:		The destination string.
+** src:		The source string to append to `dst`.
+** dstsize:	The maximum size of the resulting string.
 **
-** return	The total length of the string it tried to create.
+** Returns:
+** The total length of the string it tried to create.
 */
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)

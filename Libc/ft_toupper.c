@@ -6,11 +6,21 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:18:09 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/06 23:03:28 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:40:19 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+
+/*
+** Converts the given lowercase letter to its corresponding uppercase letter.
+**
+** c: The character to convert.
+**
+** Returns:
+** The uppercase equivalent of the given lowercase letter if the given character
+** is a lowercase letter; otherwise, returns the given character unchanged.
+*/
 
 int	ft_toupper(int c)
 {

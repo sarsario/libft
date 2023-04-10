@@ -6,14 +6,14 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 08:17:30 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/08 15:18:34 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:24:19 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** Convert the initial portion of a string pointed to by `str` to an integer.
 **
-** `str` : the string to be converted.
+** `str` :	The string to be converted.
 **
 ** Returns:
 ** The converted integer value. Behavior undefined if the the integer > INT_MAX

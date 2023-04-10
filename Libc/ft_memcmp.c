@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 16:02:27 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 18:11:46 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:25:30 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 /*
 ** Compares the first n bytes of the memory areas s1 and s2.
 **
-** s1: A pointer to the first memory area.
-** s2: A pointer to the second memory area.
-** n: The number of bytes to compare.
+** s1:	A pointer to the first memory area.
+** s2:	A pointer to the second memory area.
+** n:	The number of bytes to compare.
 **
 ** Returns:
 ** An integer less than, equal to, or greater than zero

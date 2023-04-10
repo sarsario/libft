@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 15:17:46 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/08 16:47:07 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:31:21 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@
 ** a temporary array that does not overlap src or dst, and the bytes are then
 ** copied from the temporary array to dst.
 **
-** dst: A pointer to the destination array where the content is to be copied.
-** src: A pointer to the source of data to be copied.
-** len: The number of bytes to be copied.
+** dst:	A pointer to the destination array where the content is to be copied.
+** src:	A pointer to the source of data to be copied.
+** len:	The number of bytes to be copied.
 **
 ** Returns:
 ** A pointer to the destination array, dst.

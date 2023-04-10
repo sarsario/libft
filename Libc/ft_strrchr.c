@@ -6,11 +6,23 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 15:10:23 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/06 23:03:15 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:38:24 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+
+/*
+** Searches for the last occurrence of character c (converted to a char) in the
+** string s.
+**
+** s:    A pointer to the null-terminated string to be searched.
+** c:    The character to search for. It is converted to a char.
+**
+** Returns:
+** A pointer to the last occurrence of the character c in the string s.
+** If the character is not found, it returns a NULL pointer.
+*/
 
 char	*ft_strrchr(const char *s, int c)
 {

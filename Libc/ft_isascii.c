@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 13:21:30 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 16:30:38 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:24:52 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*
 ** Checks if the given character is an ASCII character.
 **
-** c: The character to be checked.
+** c:	The character to be checked.
 **
 ** Returns:
 ** Non-zero if the character is an ASCII character, 0 otherwise.

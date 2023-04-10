@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 09:12:39 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 20:14:17 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:32:28 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,10 @@
 ** argument to the function free(3). If insufficient memory is available,
 ** NULL is returned.
 **
-** s1: The string to be duplicated.
+** s1:	The string to be duplicated.
 **
-** returns: The pointer to the new duplicate string or NULL if insufficient
+** Returns:
+** The pointer to the new duplicate string or NULL if insufficient
 ** memory was available.
 */
 

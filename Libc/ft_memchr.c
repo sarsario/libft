@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 15:45:09 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/07 17:40:34 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:25:17 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 ** Searches the initial n bytes of the memory area pointed to by s for
 ** the first occurrence of the character c (interpreted as an unsigned char).
 **
-** s: A pointer to the memory area to be searched.
-** c: The character to be searched.
-** n: The number of bytes to be searched.
+** s:	A pointer to the memory area to be searched.
+** c:	The character to be searched.
+** n:	The number of bytes to be searched.
 **
 ** Returns:
 ** A pointer to the first occurrence of the character c in the memory area s,

@@ -6,11 +6,25 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 16:39:14 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/06 23:02:48 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:36:11 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+
+/*
+** Copies at most 'dstsize - 1' characters from the string 'src' to 'dst',
+** always adding a terminating null byte. The string 'src' must be
+** null-terminated. If 'dstsize' is 0, 'dst' is not modified and the function
+** returns the length of 'src'.
+**
+** dst: The destination buffer.
+** src: The source string.
+** dstsize: The size of the destination buffer.
+**
+** Returns:
+** The length of the string 'src' (excluding the terminating null byte).
+*/
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

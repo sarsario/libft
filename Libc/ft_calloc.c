@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 08:48:43 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/08 15:33:36 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:23:50 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,11 @@
 ** Allocates memory for an array of `count` elements of `size` bytes each and
 ** returns a pointer to the allocated memory. The memory is set to zero.
 **
-** count: the number of elements to allocate memory for.
-** size: the size of each element to allocate memory for.
+** count:	The number of elements to allocate memory for.
+** size:	The size of each element to allocate memory for.
 **
-** returns: A void pointer to the allocated memory if successful, NULL otherwise.
+** returns:
+** A void pointer to the allocated memory if successful, NULL otherwise.
 */
 
 void	*ft_calloc(size_t count, size_t size)
