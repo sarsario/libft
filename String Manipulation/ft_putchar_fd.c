@@ -1,34 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/11 17:21:48 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/11 17:50:10 by osarsari         ###   ########.fr       */
+/*   Created: 2023/04/11 17:45:20 by osarsari          #+#    #+#             */
+/*   Updated: 2023/04/11 17:50:04 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+#include <unistd.h>
 
 /*
-** Applies the function 'f' to each character of the string 's'.
+** Outputs the character `c` to the given file descriptor `fd`.
 **
-** s:	The string to modify.
-** f:	The function to apply.
+** c:	The character to output.
+** fd:	The file descriptor on which to write.
 */
-
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_putchar_fd(char c, int fd)
 {
-	int	i;
-
-	if (!s || !f)
-		return ;
-	i = 0;
-	while (s[i])
-	{
-		f(i, &s[i]);
-		i++;
-	}
+	write(fd, &c, 1);
 }
