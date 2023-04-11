@@ -6,12 +6,22 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 15:33:10 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/11 13:52:10 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/11 16:50:19 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 #include <stdlib.h>
+
+/*
+** Counts the number of substrings in a given string.
+**
+** s: The string to count the substrings of.
+** c: The delimiter character.
+**
+** Returns:
+** The number of substrings in the string.
+*/
 
 static int	count_words(char *s, char c)
 {
@@ -34,6 +44,16 @@ static int	count_words(char *s, char c)
 	return (word_count);
 }
 
+/*
+** Extracts a substring from a given string until the delimiter character.
+**
+** s: The string to extract the substring from.
+** c: The delimiter character.
+**
+** Returns:
+** The extracted substring, or NULL if the allocation fails.
+*/
+
 static char	*extract_word(char *s, char c)
 {
 	char	*word;
@@ -55,6 +75,16 @@ static char	*extract_word(char *s, char c)
 	return (word - len);
 }
 
+/*
+** Frees the memory allocated for an array of strings and sets it to NULL.
+**
+** split: The array of strings to be freed.
+** size: The number of elements in the array.
+**
+** Returns:
+** NULL.
+*/
+
 static char	**ft_free(char **arr, int elem)
 {
 	while (elem >= 0)
@@ -62,6 +92,18 @@ static char	**ft_free(char **arr, int elem)
 	free(arr);
 	return (NULL);
 }
+
+/*
+** Fills an array of strings with substrings of a given string.
+**
+** split: The array of strings to be filled.
+** s: The string to be split.
+** word_count: The number of substrings to be extracted.
+** c: The delimiter character.
+**
+** Returns:
+** A pointer to the array of strings containing the substrings.
+*/
 
 static char	**ft_fill_split(char **split, char *s, int word_count, char c)
 {
@@ -86,6 +128,16 @@ static char	**ft_fill_split(char **split, char *s, int word_count, char c)
 	split[word_count] = NULL;
 	return (split);
 }
+
+/*
+** Splits a string into an array of substrings based on a delimiter character.
+**
+** s: The string to be split.
+** c: The delimiter character.
+**
+** Returns:
+** A pointer to an array of strings that contains the substrings, or NULL if the allocation fails.
+*/
 
 char	**ft_split(char *s, char c)
 {
