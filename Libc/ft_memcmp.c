@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 16:02:27 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/10 11:25:30 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/11 18:47:30 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,12 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	const unsigned char	*us1;
 	const unsigned char	*us2;
 
-	if (!s1 || !s2 || n == 0)
+	if ((!s1 && !s2) || n == 0)
 		return (0);
+	if (!s1)
+		return (-(unsigned char)*((const unsigned char *)s2));
+	if (!s2)
+		return ((unsigned char)*((const unsigned char *)s2));
 	us1 = (unsigned char *)s1;
 	us2 = (unsigned char *)s2;
 	while (--n && *us1 == *us2)

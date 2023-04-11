@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 14:02:11 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/11 16:48:29 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/11 18:47:54 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,10 @@ static int	count_digits(int n)
 	}
 	else
 		l = (long)n;
-	while (ln > 10)
+	while (l > 10)
 	{
 		digits++;
-		ln /= 10;
+		l /= 10;
 	}
 	return (digits);
 }
@@ -54,7 +54,7 @@ static int	count_digits(int n)
 
 char	*ft_itoa(int n)
 {
-	long	ln;
+	long	l;
 	int		digits;
 	char	*the_int;
 
@@ -65,16 +65,16 @@ char	*ft_itoa(int n)
 	the_int[digits] = '\0';
 	if (n == 0)
 		the_int[0] = '0';
-	ln = (long)n;
+	l = (long)n;
 	if (n < 0)
 	{
-		ln = -ln;
+		l = -l;
 		the_int[0] = '-';
 	}
-	while (ln > 0)
+	while (l > 0)
 	{
-		the_int[--digits] = ln % 10 + '0';
-		ln /= 10;
+		the_int[--digits] = l % 10 + '0';
+		l /= 10;
 	}
 	return (the_int);
 }
