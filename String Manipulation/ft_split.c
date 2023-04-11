@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 15:33:10 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/11 13:13:29 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/11 13:52:10 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,19 +55,19 @@ static char	*extract_word(char *s, char c)
 	return (word - len);
 }
 
-char	**ft_split(char *s, char c)
+static char	**ft_free(char **arr, int elem)
 {
-	char	**split;
+	while (elem >= 0)
+		free(arr[elem--]);
+	free(arr);
+	return (NULL);
+}
+
+static char	**ft_fill_split(char **split, char *s, int word_count, char c)
+{
 	char	*word;
-	int		word_count;
 	int		i;
 
-	if (!s)
-		return (NULL);
-	word_count = count_words(s, c);
-	split = malloc((word_count + 1) * sizeof(char *));
-	if (!split)
-		return (NULL);
 	i = 0;
 	while (*s)
 	{
@@ -77,17 +77,26 @@ char	**ft_split(char *s, char c)
 		{
 			word = extract_word(s, c);
 			if (!word)
-			{
-				while (i >= 0)
-					free(split[--i]);
-				free(split);
-				return (NULL);
-			}
+				return (ft_free(split, i));
 			split[i] = word;
 			s += ft_strlen(word);
 			i++;
 		}
-		split[i] = NULL;
 	}
+	split[word_count] = NULL;
 	return (split);
+}
+
+char	**ft_split(char *s, char c)
+{
+	char	**split;
+	int		word_count;
+
+	if (!s)
+		return (NULL);
+	word_count = count_words(s, c);
+	split = malloc((word_count + 1) * sizeof(char *));
+	if (!split)
+		return (NULL);
+	return (ft_fill_split(split, s, word_count, c));
 }
