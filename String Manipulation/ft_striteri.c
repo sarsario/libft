@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 17:21:48 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/11 17:40:11 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/11 17:42:12 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	int	i;
+
 	if (!s || !f)
 		return ;
 	i = 0;
