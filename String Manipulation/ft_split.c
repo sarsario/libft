@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 15:33:10 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/11 11:56:40 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/11 12:56:26 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,7 @@ char	**ft_split(char *s, char c)
 				return (NULL);
 			}
 			split[i] = word;
+			s += ft_strlen(word);
 			i++;
 		}
 	}
