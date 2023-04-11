@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 15:33:10 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/11 16:50:19 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/11 16:53:00 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -136,7 +136,8 @@ static char	**ft_fill_split(char **split, char *s, int word_count, char c)
 ** c: The delimiter character.
 **
 ** Returns:
-** A pointer to an array of strings that contains the substrings, or NULL if the allocation fails.
+** A pointer to an array of strings that contains the substrings,
+** or NULL if the allocation fails.
 */
 
 char	**ft_split(char *s, char c)
