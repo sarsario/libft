@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 16:55:36 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/11 17:10:22 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/11 17:12:21 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	while (s[i])
 	{
 		smapi[i] = f(i, s[i]);
-		i++
+		i++;
 	}
 	smapi[i] = '\0';
 	return (smapi);
