@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 15:33:10 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/10 22:12:58 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/11 11:56:40 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,76 +15,77 @@
 
 static int	count_words(char *s, char c)
 {
-	int	words;
+	int	word_count;
 
-	words = 0;
-	while (ft_strchr(s, c))
-	{
-		s = ft_strchr(s, c) + 1;
-		words++;
-	}
 	if (!s)
-		return (words);
-	return (words + 1);
+		return (0);
+	word_count = 0;
+	while (*s)
+	{
+		if (*s == c)
+			s++;
+		else
+		{
+			while (*s && *s != c)
+				s++;
+			word_count++;
+		}
+	}
+	return (word_count);
+}
+
+static char	*extract_word(char *s, char c)
+{
+	char	*word;
+	int		len;
+
+	len = 0;
+	word = s;
+	while (*word && *word != c)
+	{
+		word++;
+		len++;
+	}
+	word = malloc((len + 1) * sizeof(char));
+	if (!word)
+		return (NULL);
+	while (*s && *s != c)
+		*word++ = *s++;
+	*word = 0;
+	return (word - len);
 }
 
 char	**ft_split(char *s, char c)
 {
-	char	*end;
-	int		words;
+	char	**split;
+	char	*word;
+	int		word_count;
+	int		i;
 
-	while (ft_strchr(end, c))
-		end = ft_strchr(end, c);
-	
+	if (!s)
+		return (NULL);
+	word_count = count_words(s, c);
+	split = malloc((word_count + 1) * sizeof(char *));
+	if (!split)
+		return (NULL);
+	i = 0;
+	while (*s)
+	{
+		if (*s == c)
+			s++;
+		else
+		{
+			word = extract_word(s, c);
+			if (!word)
+			{
+				while (i >= 0)
+					free(split[--i]);
+				free(split);
+				return (NULL);
+			}
+			split[i] = word;
+			i++;
+		}
+	}
+	return (split);
 }
-
-// If we encounter char in s == c
-// in_word = 0 which means we are not in a word
-// and go to next char in s
-// ELSE if (!in_word) which means we were previously not in a word
-// and char != c
-// then we count a new word.
-// and set in_word = 1 because we entered a word.
-// and the only way for the word to end is if we encounter c again
-// static unsigned int	ft_count_words(char const *s, char c)
-// {
-// 	unsigned int	count;
-// 	int				in_word;
-
-// 	count = 0;
-// 	in_word = 0;
-// 	while (*s)
-// 	{
-// 		if (*s == c)
-// 			in_word = 0;
-// 		else if (!in_word)
-// 		{
-// 			in_word = 1;
-// 			count++;
-// 		}
-// 		s++;
-// 	}
-// 	return (count);
-// }
-
-// TODO char *extract_word(char *s, char c);
-// Need to extract each word from s and add to **split
-// char	**ft_split(char const *s, char c)
-// {
-// 	char			**split;
-// 	unsigned int	nb_words;
-// 	int				i;
-
-// 	if (!s)
-// 		return (NULL);
-// 	nb_words = ft_count_words(s, c);
-// 	split = malloc(sizeof(char *) * (nb_words + 1));
-// 	if (!split)
-// 		return (NULL);
-// 	i = 0;
-// 	while (i < nb_words)
-// 	{
-// 		i++;
-// 	}
-// 	return (split);
-// }
