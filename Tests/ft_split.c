@@ -43,7 +43,6 @@ int main(void)
 		while (split2[i])
 		{
 			printf("split2[%i] = %s\n", i, split2[i]);
-			printf("ft_strlen = %zu\n", ft_strlen(split2[i]));
 			free(split2[i]);
 			i++;
 		}
