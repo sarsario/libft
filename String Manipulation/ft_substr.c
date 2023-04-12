@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 09:52:42 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/10 18:02:10 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/12 09:19:37 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	s_len;
 	size_t	i;
 
-	if (!s || start >= ft_strlen(s))
+	if (!s)
 		return (NULL);
+	if (!*s || start >= ft_strlen(s))
+		return (ft_strdup(""));
 	s_len = ft_strlen(s + start);
 	if (s_len < len)
 		len = s_len;
