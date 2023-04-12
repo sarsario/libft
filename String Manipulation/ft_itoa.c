@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 14:02:11 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/11 18:47:54 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/12 08:25:36 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	count_digits(int n)
 	int		digits;
 	long	l;
 
-	digits = 1;
+	digits = 0;
 	if (n < 0)
 	{
 		digits++;
@@ -35,7 +35,7 @@ static int	count_digits(int n)
 	}
 	else
 		l = (long)n;
-	while (l > 10)
+	while (l > 0)
 	{
 		digits++;
 		l /= 10;

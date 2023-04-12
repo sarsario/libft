@@ -6,11 +6,11 @@ int main(void)
 {
     char *the_int;
 
-    the_int = ft_itoa(1);
+    the_int = ft_itoa(10);
     if (!the_int)
-        printf("itoa(1) is NULL\n");
+        printf("itoa(10) is NULL\n");
     else
-        printf("itoa(1) = %s\n", the_int);
+        printf("itoa(10) = %s\n", the_int);
     free(the_int);
     the_int = ft_itoa(-1);
     if (!the_int)
@@ -41,6 +41,12 @@ int main(void)
         printf("itoa(2147483647) is NULL\n");
     else
         printf("itoa(2147483647) = %s\n", the_int);
+    free(the_int);
+    the_int = ft_itoa(102472620);
+    if (!the_int)
+        printf("itoa(102472620) is NULL\n");
+    else
+        printf("itoa(102472620) = %s\n", the_int);
     free(the_int);
     return (0);
 }
