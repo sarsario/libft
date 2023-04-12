@@ -1,18 +1,16 @@
 LIBC_DIR = Libc
 STRING_MANIP = String\ Manipulation
 OBJ_DIR = obj
-# TESTS_DIR = Tests
+BONUS_DIR = Bonus
 
 SRCS = $(wildcard \
 	$(addsuffix /*.c,$(LIBC_DIR)) \
 	$(addsuffix /*.c,$(STRING_MANIP)) \
 )
-# TEST_SRCS = $(wildcard $(addsuffix /*.c,$(TESTS_DIR)))
+SRCS_BONUS = $(wildcard $(addsuffix /*.c,$(BONUS_DIR)))
 OBJS = $(addprefix $(OBJ_DIR)/, $(notdir $(SRCS:.c=.o)))
-TEST_OBJS = $(TEST_SRCS:%.c=obj/%.o)
+OBJS_BONUS = $(addprefix $(OBJ_DIR)/, $(notdir $(SRCS_BONUS:.c=.o)))
 NAME = libft.a
-# TEST_NAME = libft_test
-# TEST_FILE = ft_atoi.c
 
 AR = ar rcs
 RM = rm -f
@@ -20,7 +18,7 @@ RM = rm -f
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-vpath %.c $(LIBC_DIR) $(STRING_MANIP) $(TESTS_DIR)
+vpath %.c $(LIBC_DIR) $(STRING_MANIP) $(BONUS_DIR)
 
 all: $(NAME)
 
@@ -30,14 +28,8 @@ $(NAME): $(OBJS)
 $(OBJ_DIR)/%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-# test_%:
-# 	$(MAKE) $(TEST_NAME) TEST_FILE=$*.c -C $(CURDIR)
-
-# $(TEST_NAME): $(TEST_OBJS) $(NAME)
-# 	$(CC) $(CFLAGS) $^ -o $@
-
-# $(OBJ_DIR)/$(TESTS_DIR)/%.o: $(TESTS_DIR)/%.c
-# 	$(CC) $(CFLAGS) -c $< -o $@
+bonus: $(OBJS) $(OBJS_BONUS)
+	$(AR) $(NAME) $^
 
 clean:
 	$(RM) $(OBJS) $(TEST_OBJS)
@@ -47,4 +39,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re test_%
+.PHONY: all clean fclean re bonus
