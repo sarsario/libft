@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:57:59 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/10 11:31:09 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/12 18:16:55 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char		*dst_char;
 	const char	*src_char;
 
-	if (!dst)
-		return (NULL);
 	if (!dst && !src)
 		return (NULL);
 	dst_char = dst;

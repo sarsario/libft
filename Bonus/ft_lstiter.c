@@ -1,34 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/03 13:31:43 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/12 18:38:08 by osarsari         ###   ########.fr       */
+/*   Created: 2023/04/12 13:20:59 by osarsari          #+#    #+#             */
+/*   Updated: 2023/04/12 13:35:49 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
 /*
-** Computes the length of the null-terminated string s.
+** Iterates the list `lst` and applies the function `f` on the content
+** of each node.
 **
-** s:	A pointer to the null-terminated string to compute the length of.
-**
-** Returns:
-** The number of characters in the string s, excluding the null-terminator.
+** lst:	The address of a pointer to a node.
+** f:	The address of the function used to iterate on the list.
 */
 
-size_t	ft_strlen(const char *s)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	size_t	len;
-
-	len = 0;
-	if (!s)
-		return (len);
-	while (*s++)
-		len++;
-	return (len);
+	if (!lst || !f)
+		return ;
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }
