@@ -95,5 +95,26 @@ int main(void)
 		}
 		free(split4);
 	}
+	printf("=========================================\n");
+	char	*s5;
+    char    c5;
+
+    s5 = "hello!";
+    c5 = ' ';
+	printf("s5 = %s\n", s5);
+    char	**split5 = ft_split(s5, c5);
+	if (!split5)
+		printf("split5 is NULL\n");
+	else
+	{
+		i = 0;
+		while (split5[i])
+		{
+			printf("split5[%i] = |%s|\n", i, split5[i]);
+			free(split5[i]);
+			i++;
+		}
+		free(split5);
+	}
     return (0);
 }
