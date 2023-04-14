@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 14:46:07 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/10 11:32:13 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/14 12:07:53 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,6 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	if (!s)
-		return (NULL);
 	while (*s && (unsigned char)c != *s)
 		s++;
 	if ((unsigned char)c == *s)

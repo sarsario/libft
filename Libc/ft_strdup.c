@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 09:12:39 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/10 11:32:28 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/14 12:08:16 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,6 @@ char	*ft_strdup(const char *s1)
 	size_t	len;
 	char	*dup;
 
-	if (!s1)
-		return (NULL);
 	len = ft_strlen(s1);
 	dup = (char *)malloc(sizeof(char) * len + 1);
 	if (!dup)

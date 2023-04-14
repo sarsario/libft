@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 15:10:23 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/10 11:38:24 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/14 12:11:04 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ char	*ft_strrchr(const char *s, int c)
 	size_t	len;
 
 	len = ft_strlen(s);
-	while (len > 0 && c != s[len])
+	while (len > 0 && (unsigned char)c != s[len])
 		len--;
-	if (c == s[len])
-		return ((char *)s + len);
+	if ((unsigned char)c == s[len])
+		return ((char *)(s + len));
 	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 15:45:09 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/10 11:25:17 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/14 12:04:01 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,6 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	if (!s)
-		return (NULL);
 	while (n--)
 	{
 		if ((unsigned char)c == *(unsigned char *)s)

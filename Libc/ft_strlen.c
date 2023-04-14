@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 13:31:43 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/12 18:38:08 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/14 12:09:43 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,6 @@ size_t	ft_strlen(const char *s)
 	size_t	len;
 
 	len = 0;
-	if (!s)
-		return (len);
 	while (*s++)
 		len++;
 	return (len);

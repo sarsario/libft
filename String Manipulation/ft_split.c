@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 15:33:10 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/13 17:10:50 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/14 12:07:18 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 ** The number of substrings in the string.
 */
 
-static int	count_words(char *s, char c)
+static int	count_words(char const *s, char c)
 {
 	int	word_count;
 
@@ -54,13 +54,13 @@ static int	count_words(char *s, char c)
 ** The extracted substring, or NULL if the allocation fails.
 */
 
-static char	*extract_word(char *s, char c)
+static char	*extract_word(char const *s, char c)
 {
 	char	*word;
 	int		len;
 
 	len = 0;
-	word = s;
+	word = (char *)s;
 	while (*word && *word != c)
 	{
 		word++;
@@ -105,7 +105,7 @@ static char	**ft_free(char **arr, int elem)
 ** A pointer to the array of strings containing the substrings.
 */
 
-static char	**ft_fill_split(char **split, char *s, int word_count, char c)
+static char	**ft_fill_split(char **split, char const *s, int word_count, char c)
 {
 	char	*word;
 	int		i;
@@ -140,7 +140,7 @@ static char	**ft_fill_split(char **split, char *s, int word_count, char c)
 ** or NULL if the allocation fails.
 */
 
-char	**ft_split(char *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**split;
 	int		word_count;

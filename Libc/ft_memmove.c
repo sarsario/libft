@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 15:17:46 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/10 11:31:21 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/04/14 12:05:03 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,16 +31,14 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	char		*dst_char;
 	const char	*src_char;
 
-	if (!dst || !src)
+	if (!dst && !src)
 		return (NULL);
 	dst_char = dst;
 	src_char = src;
 	if (src_char < dst_char)
 	{
 		while (len--)
-		{
-			dst_char[len] = src_char[len];
-		}
+			*(dst_char + len) = *(src_char + len);
 		return (dst);
 	}
 	while (len--)
