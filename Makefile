@@ -1,4 +1,5 @@
 LIBC_DIR = Libc
+PRINTF_DIR = Printf
 STRING_MANIP = String\ Manipulation
 OBJ_DIR = obj
 BONUS_DIR = Bonus
@@ -6,6 +7,7 @@ BONUS_DIR = Bonus
 SRCS = $(wildcard \
 	$(addsuffix /*.c,$(LIBC_DIR)) \
 	$(addsuffix /*.c,$(STRING_MANIP)) \
+	$(addsuffix /*.c,$(PRINTF_DIR)) \
 )
 SRCS_BONUS = $(wildcard $(addsuffix /*.c,$(BONUS_DIR)))
 OBJS = $(addprefix $(OBJ_DIR)/, $(notdir $(SRCS:.c=.o)))
@@ -18,7 +20,7 @@ RM = rm -f
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-vpath %.c $(LIBC_DIR) $(STRING_MANIP) $(BONUS_DIR)
+vpath %.c $(LIBC_DIR) $(STRING_MANIP) %(PRINTF_DIR) $(BONUS_DIR)
 
 all: $(NAME)
 
