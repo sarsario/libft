@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/06 12:12:31 by osarsari          #+#    #+#             */
-/*   Updated: 2023/05/06 13:19:01 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/05/06 13:45:43 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	ft_printf(const char *s, ...)
 		}
 		else
 		{
-			if (try_putsimple(*s, &total_printed) < 0)
+			if (try_putchar(*s, &total_printed) < 0)
 				return (total_printed);
 		}
 		s++;
