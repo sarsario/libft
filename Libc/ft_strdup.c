@@ -6,12 +6,11 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 09:12:39 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/14 12:08:16 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/05/06 12:05:10 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdlib.h>
 
 /*
 ** Allocates sufficient memory for a copy of the string 's1', does the copy,

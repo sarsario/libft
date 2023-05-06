@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 12:46:36 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/14 12:07:34 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/05/06 12:04:05 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 # define LIBFT_H
 # include <unistd.h>
+# include <stdlib.h>
 
 typedef struct s_list
 {

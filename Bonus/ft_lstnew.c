@@ -6,12 +6,11 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 09:49:40 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/12 10:45:30 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/05/06 12:07:22 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdlib.h>
 
 /*
 ** Allocates (with malloc(3)) and returns a new node. The member variable

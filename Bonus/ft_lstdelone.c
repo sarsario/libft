@@ -6,12 +6,11 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 12:45:46 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/12 12:52:54 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/05/06 12:07:14 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdlib.h>
 
 /*
 ** Takes as a parameter a node and frees the memory of the node's content

@@ -6,12 +6,11 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 14:02:11 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/12 08:28:49 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/05/06 12:05:42 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdlib.h>
 
 /*
 ** Counts the number of digits in an integer.

@@ -6,12 +6,11 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 08:48:43 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/14 12:01:06 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/05/06 12:04:45 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdlib.h>
 
 /*
 ** Allocates memory for an array of `count` elements of `size` bytes each and

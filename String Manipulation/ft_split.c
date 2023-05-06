@@ -6,12 +6,11 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 15:33:10 by osarsari          #+#    #+#             */
-/*   Updated: 2023/04/14 12:07:18 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/05/06 12:06:04 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdlib.h>
 
 /*
 ** Counts the number of substrings in a given string.
