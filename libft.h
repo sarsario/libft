@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 12:46:36 by osarsari          #+#    #+#             */
-/*   Updated: 2023/05/06 14:55:25 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/05/06 15:03:16 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int		ft_printf(char *s, ...);
-int		try_putsimple(char c, int *total_printed);
 int		try_putchar(int c, int *total_printed);
 int		try_putstr(char *s, int *total_printed);
 int		try_putptr(void *ptr, int *total_printed);
