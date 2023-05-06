@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/06 13:55:54 by osarsari          #+#    #+#             */
-/*   Updated: 2023/05/06 14:56:08 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/05/06 15:23:32 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,13 @@ int	try_putnbr(int n, int *total_printed)
 			return (-1);
 	}
 	return (try_putchar(l % 10 + '0', total_printed));
+}
+
+int	try_putnbr_u(unsigned int n, int *total_printed)
+{
+	const char *base = "0123456789";
+
+	return (try_putbase_u(n, base, total_printed));
 }
 
 int	try_puthex(char c, unsigned int n, int *total_printed)

@@ -6,7 +6,7 @@
 /*   By: osarsari <osarsari@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/06 12:12:31 by osarsari          #+#    #+#             */
-/*   Updated: 2023/05/06 14:53:51 by osarsari         ###   ########.fr       */
+/*   Updated: 2023/05/06 15:22:12 by osarsari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	try_putconversion(char c, va_list args, int *total_printed)
 	else if (c == 'd' || c == 'i')
 		return (try_putnbr(va_arg(args, int), total_printed));
 	else if (c == 'u')
-		return (try_putnbr(va_arg(args, unsigned int), total_printed));
+		return (try_putnbr_u(va_arg(args, unsigned int), total_printed));
 	else if (c == 'x' || c == 'X')
 		return (try_puthex(c, va_arg(args, unsigned int), total_printed));
 	else if (c == '%')
